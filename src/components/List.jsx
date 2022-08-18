@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 import List1  from "../images/list.jpg";
 
 export default function List() {
@@ -12,10 +13,10 @@ export default function List() {
         <h1 className='text-center text-black font-bold font-mono text-4xl m-10 '>Choose the anime of your choice ❤</h1>
         <div className='flex flex-wrap justify-center items-center h-1/2' >
         {a.map((e)=>{
-        return <button className='text-white bg-black rounded-md p-4  font-mono font-bold text-2xl hover:bg-slate-800 m-5' >{e}</button>
+        return <button className='text-white bg-black rounded-md p-4  font-mono font-bold text-2xl hover:bg-slate-800 m-5' ><Link to={`/quote/${e.replace(" ","")}`}>{e}</Link></button>
         })}   
         </div>
-        <img src={List1} alt="Some error occured" className=' w-full'/>
+        <img src={List1} alt="Some error occured" className='w-screen h-min '/>
         </div>
         </>
     )

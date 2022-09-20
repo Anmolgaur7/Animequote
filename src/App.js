@@ -26,7 +26,6 @@ function App() {
           <Route exact path="/list/quote/NarutoShippuuden" element={<Quote title="Naruto Shippuuden"/>}/>
           <Route exact path="/list/quote/BokunoHeroAcademia" element={<Quote title="Boku no Hero Academia"/>}/>
           <Route exact path="/list/quote/DragonBallSuper" element={<Quote title="Dragon Ball Super"/>}/>
-
         </Routes>
       </Router>
 
